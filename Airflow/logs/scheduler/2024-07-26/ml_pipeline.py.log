@@ -1,0 +1,192 @@
+[2024-07-26T12:15:22.836+0000] {processor.py:161} INFO - Started process (PID=78) to work on /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:15:22.837+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2024-07-26T12:15:22.841+0000] {logging_mixin.py:188} INFO - [2024-07-26T12:15:22.840+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:15:25.354+0000] {logging_mixin.py:188} INFO - [2024-07-26T12:15:25.350+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 141, in <module>
+    task_training_basic_classifier = PythonOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 184, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 811, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/task_group.py", line 231, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'train_test_split' has already been added to the DAG
+[2024-07-26T12:15:25.354+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:15:25.373+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 2.541 seconds
+[2024-07-26T12:15:55.501+0000] {processor.py:161} INFO - Started process (PID=153) to work on /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:15:55.502+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2024-07-26T12:15:55.506+0000] {logging_mixin.py:188} INFO - [2024-07-26T12:15:55.505+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:15:56.444+0000] {logging_mixin.py:188} INFO - [2024-07-26T12:15:56.432+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 141, in <module>
+    task_training_basic_classifier = PythonOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 184, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 811, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/task_group.py", line 231, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'train_test_split' has already been added to the DAG
+[2024-07-26T12:15:56.445+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:15:56.468+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.970 seconds
+[2024-07-26T12:16:26.917+0000] {processor.py:161} INFO - Started process (PID=218) to work on /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:16:26.918+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2024-07-26T12:16:26.921+0000] {logging_mixin.py:188} INFO - [2024-07-26T12:16:26.920+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:16:27.910+0000] {logging_mixin.py:188} INFO - [2024-07-26T12:16:27.906+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 141, in <module>
+    task_training_basic_classifier = PythonOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 184, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 811, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/task_group.py", line 231, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'train_test_split' has already been added to the DAG
+[2024-07-26T12:16:27.911+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:16:27.932+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 1.019 seconds
+[2024-07-26T12:16:58.765+0000] {processor.py:161} INFO - Started process (PID=288) to work on /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:16:58.767+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2024-07-26T12:16:58.769+0000] {logging_mixin.py:188} INFO - [2024-07-26T12:16:58.768+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:17:00.049+0000] {logging_mixin.py:188} INFO - [2024-07-26T12:17:00.043+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 141, in <module>
+    task_training_basic_classifier = PythonOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 184, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 811, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/task_group.py", line 231, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'train_test_split' has already been added to the DAG
+[2024-07-26T12:17:00.050+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:17:00.070+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 1.309 seconds
+[2024-07-26T12:17:30.571+0000] {processor.py:161} INFO - Started process (PID=356) to work on /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:17:30.572+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2024-07-26T12:17:30.574+0000] {logging_mixin.py:188} INFO - [2024-07-26T12:17:30.574+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:17:31.562+0000] {logging_mixin.py:188} INFO - [2024-07-26T12:17:31.556+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 141, in <module>
+    task_training_basic_classifier = PythonOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 184, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 811, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/task_group.py", line 231, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'train_test_split' has already been added to the DAG
+[2024-07-26T12:17:31.562+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:17:31.616+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 1.049 seconds
+[2024-07-26T12:18:02.196+0000] {processor.py:161} INFO - Started process (PID=424) to work on /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:18:02.197+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2024-07-26T12:18:02.199+0000] {logging_mixin.py:188} INFO - [2024-07-26T12:18:02.199+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:18:03.229+0000] {logging_mixin.py:188} INFO - [2024-07-26T12:18:03.224+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 141, in <module>
+    task_training_basic_classifier = PythonOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 184, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 811, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/task_group.py", line 231, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'train_test_split' has already been added to the DAG
+[2024-07-26T12:18:03.230+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:18:03.252+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 1.060 seconds
+[2024-07-26T12:18:33.387+0000] {processor.py:161} INFO - Started process (PID=496) to work on /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:18:33.388+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2024-07-26T12:18:33.389+0000] {logging_mixin.py:188} INFO - [2024-07-26T12:18:33.389+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:18:34.253+0000] {logging_mixin.py:188} INFO - [2024-07-26T12:18:34.246+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 141, in <module>
+    task_training_basic_classifier = PythonOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 184, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 811, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/task_group.py", line 231, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'train_test_split' has already been added to the DAG
+[2024-07-26T12:18:34.254+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:18:34.275+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.892 seconds
+[2024-07-26T12:19:04.778+0000] {processor.py:161} INFO - Started process (PID=560) to work on /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:19:04.779+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2024-07-26T12:19:04.781+0000] {logging_mixin.py:188} INFO - [2024-07-26T12:19:04.781+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:19:05.762+0000] {logging_mixin.py:188} INFO - [2024-07-26T12:19:05.756+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 141, in <module>
+    task_training_basic_classifier = PythonOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 184, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 811, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/task_group.py", line 231, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'train_test_split' has already been added to the DAG
+[2024-07-26T12:19:05.762+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2024-07-26T12:19:05.781+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 1.008 seconds

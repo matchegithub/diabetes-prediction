@@ -1,0 +1,19 @@
+[2024-07-26T12:32:07.088+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_pipeline_demo.training_basic_classifier manual__2024-07-26T12:31:57.622976+00:00 [queued]>
+[2024-07-26T12:32:07.096+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_pipeline_demo.training_basic_classifier manual__2024-07-26T12:31:57.622976+00:00 [queued]>
+[2024-07-26T12:32:07.097+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2024-07-26T12:32:07.110+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): training_basic_classifier> on 2024-07-26 12:31:57.622976+00:00
+[2024-07-26T12:32:07.116+0000] {standard_task_runner.py:60} INFO - Started process 239 to run task
+[2024-07-26T12:32:07.119+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'ml_pipeline_demo', 'training_basic_classifier', 'manual__2024-07-26T12:31:57.622976+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/ml_pipeline2.py', '--cfg-path', '/tmp/tmpa21su7wm']
+[2024-07-26T12:32:07.121+0000] {standard_task_runner.py:88} INFO - Job 34: Subtask training_basic_classifier
+[2024-07-26T12:32:07.169+0000] {task_command.py:423} INFO - Running <TaskInstance: ml_pipeline_demo.training_basic_classifier manual__2024-07-26T12:31:57.622976+00:00 [running]> on host c65e0f5b6921
+[2024-07-26T12:32:07.243+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ml_pipeline_demo' AIRFLOW_CTX_TASK_ID='training_basic_classifier' AIRFLOW_CTX_EXECUTION_DATE='2024-07-26T12:31:57.622976+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-26T12:31:57.622976+00:00'
+[2024-07-26T12:32:07.245+0000] {logging_mixin.py:188} INFO - ---- Inside training_basic_classifier component ----
+[2024-07-26T12:32:07.249+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+
+[2024-07-26T12:32:07.269+0000] {logging_mixin.py:188} INFO - 
+ Logistic regression classifier is trained on iris data and saved to PV location /model.pkl ----
+[2024-07-26T12:32:07.269+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-07-26T12:32:07.278+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=ml_pipeline_demo, task_id=training_basic_classifier, execution_date=20240726T123157, start_date=20240726T123207, end_date=20240726T123207
+[2024-07-26T12:32:07.332+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-07-26T12:32:07.363+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check
